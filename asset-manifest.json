@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/React_text_expander/static/css/main.d41f9708.css",
+    "main.js": "/React_text_expander/static/js/main.ffb376a8.js",
+    "index.html": "/React_text_expander/index.html",
+    "main.d41f9708.css.map": "/React_text_expander/static/css/main.d41f9708.css.map",
+    "main.ffb376a8.js.map": "/React_text_expander/static/js/main.ffb376a8.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d41f9708.css",
+    "static/js/main.ffb376a8.js"
+  ]
+}
