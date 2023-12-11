@@ -42,6 +42,7 @@ TextExpander.propTypes = {
   buttonColor: PropTypes.string,
   expanded: PropTypes.bool,
   collapsedNumWords: PropTypes.number,
+  className: PropTypes.string,
   children: PropTypes.string,
 };
 
@@ -51,12 +52,13 @@ function TextExpander({
   buttonColor = "purple",
   expanded = false,
   collapsedNumWords = 10,
+  className = "",
   children,
 }) {
   const [isExpanded, setIsExpanded] = useState(expanded);
 
   return (
-    <div className="box">
+    <div className={className}>
       <div>
         {isExpanded
           ? children
