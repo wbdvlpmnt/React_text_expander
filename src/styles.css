@@ -16,6 +16,7 @@
   
   .expandButton{
     display: inline-block;
+    background-color: #f7f7f7;
     border: none;
     margin: 0;
     text-decoration: none;

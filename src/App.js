@@ -38,6 +38,7 @@ export default function App() {
 function TextExpander({
   expandButtonText = "Show more",
   collapseButtonText = "Show less",
+  buttonColor = "purple",
   children,
 }) {
   const [isExpanded, setIsExpanded] = useState(true);
@@ -48,6 +49,7 @@ function TextExpander({
         {children}{" "}
         <button
           className="expandButton"
+          style={{ color: buttonColor }}
           onClick={() => setIsExpanded(!isExpanded)}
         >
           {isExpanded ? collapseButtonText : expandButtonText}
