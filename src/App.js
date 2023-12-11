@@ -54,7 +54,7 @@ function TextExpander({
               0,
               children.indexOf(children.split(" ")[collapsedNumWords])
             )}
-        {"... "}
+        {isExpanded ? " " : "... "}
         <button
           className="expandButton"
           style={{ color: buttonColor }}
