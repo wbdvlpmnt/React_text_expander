@@ -40,6 +40,7 @@ function TextExpander({
   collapseButtonText = "Show less",
   buttonColor = "purple",
   expanded = false,
+  collapsedNumWords = 10,
   children,
 }) {
   const [isExpanded, setIsExpanded] = useState(expanded);
@@ -47,7 +48,11 @@ function TextExpander({
   return (
     <div className="box">
       <div>
-        {children}{" "}
+        {children.substring(
+          0,
+          children.indexOf(children.split(" ")[collapsedNumWords])
+        )}
+        {"... "}
         <button
           className="expandButton"
           style={{ color: buttonColor }}
