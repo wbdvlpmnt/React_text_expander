@@ -48,10 +48,12 @@ function TextExpander({
   return (
     <div className="box">
       <div>
-        {children.substring(
-          0,
-          children.indexOf(children.split(" ")[collapsedNumWords])
-        )}
+        {isExpanded
+          ? children
+          : children.substring(
+              0,
+              children.indexOf(children.split(" ")[collapsedNumWords])
+            )}
         {"... "}
         <button
           className="expandButton"
