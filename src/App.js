@@ -43,12 +43,16 @@ function TextExpander({
   const [isExpanded, setIsExpanded] = useState(true);
 
   return (
-    <>
-      <div>{children}</div>
-
-      <p onClick={() => setIsExpanded(!isExpanded)}>
-        {isExpanded ? collapseButtonText : expandButtonText}
-      </p>
-    </>
+    <div className="box">
+      <div>
+        {children}{" "}
+        <button
+          className="expandButton"
+          onClick={() => setIsExpanded(!isExpanded)}
+        >
+          {isExpanded ? collapseButtonText : expandButtonText}
+        </button>
+      </div>
+    </div>
   );
 }
