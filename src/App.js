@@ -39,9 +39,10 @@ function TextExpander({
   expandButtonText = "Show more",
   collapseButtonText = "Show less",
   buttonColor = "purple",
+  expanded = false,
   children,
 }) {
-  const [isExpanded, setIsExpanded] = useState(true);
+  const [isExpanded, setIsExpanded] = useState(expanded);
 
   return (
     <div className="box">
